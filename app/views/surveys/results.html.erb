@@ -1,0 +1,28 @@
+<div>
+	<% if flash[:success] %>
+		<p><%= flash[:success] %></p>
+	<% end %>
+
+	<table>
+		<tr>
+			<td> Submitted Information</td>
+		</tr>
+		<tr>
+			<td>Name</td>
+			<td><%= @result['name'] %></td>
+		</tr>
+		<tr>
+			<td>Location</td>
+			<td><%= @result['location'] %></td>
+		</tr>
+		<tr>
+			<td>Language</td>
+			<td><%= @result['language'] %></td>
+		</tr>
+
+		<tr>
+			<td>Comment</td>
+			<td><%= @result['comment'] %></td>
+		</tr>
+	</table>
+</div>

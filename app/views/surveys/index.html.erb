@@ -1,0 +1,39 @@
+<div> 
+	<form action='/survey' method='post'>
+	
+	<div>
+		<label>Your Name:</label>
+		<input type ='text' name="survey[name]">
+	</div>
+
+	<div>
+		<label>Dojo Location:</label>
+		<select name='survey[location]'>
+			<option value ="Mountain View, CA">Mountain View, CA</option>
+			<option value ="San Diego, CA">San Diego, CA</option>
+			<option value ="Seattle, WA">Seattle, WA</option>
+			<option value ="San Jose, CA">
+			San Jose, CA</option>
+		</select>
+	</div>
+
+	<div>
+		<label>Favorite Language</label>
+		<select name ="survey[language">
+			<option value='Javascript'>Javascript</option>
+			<option value="PHP">PHP</option>
+			<option value="Ruby">Ruby</option>
+			<option value="Python">Python</option>
+			<option value ="HTML/CSS">HTML/CSS</option>
+		</select>
+	</div>
+
+	<div>
+		<label>Comment</label>
+		<textarea rows="4" cols='35' name="survey[comment]"></textarea>
+	</div>
+
+</form>
+</div>
+
+

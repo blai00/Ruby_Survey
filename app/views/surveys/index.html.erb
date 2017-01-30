@@ -1,6 +1,6 @@
 <div> 
-	<form action='/survey' method='post'>
-	
+	<form action='/surveys' method='post'>
+	<input name ="authenticity_token" value ="<%= form_authenticity_token %>" type ="hidden">
 	<div>
 		<label>Your Name:</label>
 		<input type ='text' name="survey[name]">
@@ -19,7 +19,7 @@
 
 	<div>
 		<label>Favorite Language</label>
-		<select name ="survey[language">
+		<select name ="survey[language]">
 			<option value='Javascript'>Javascript</option>
 			<option value="PHP">PHP</option>
 			<option value="Ruby">Ruby</option>
@@ -32,6 +32,7 @@
 		<label>Comment</label>
 		<textarea rows="4" cols='35' name="survey[comment]"></textarea>
 	</div>
+	<input type='submit' value='Submit'>
 
 </form>
 </div>

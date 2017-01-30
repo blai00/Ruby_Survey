@@ -9,20 +9,20 @@
 		</tr>
 		<tr>
 			<td>Name</td>
-			<td><%= @result['name'] %></td>
+			<td><%= session['result']['name'] %></td>
 		</tr>
 		<tr>
 			<td>Location</td>
-			<td><%= @result['location'] %></td>
+			<td><%= session['result']['location'] %></td>
 		</tr>
 		<tr>
 			<td>Language</td>
-			<td><%= @result['language'] %></td>
+			<td><%= session['result']['language'] %></td>
 		</tr>
 
 		<tr>
 			<td>Comment</td>
-			<td><%= @result['comment'] %></td>
+			<td><%= session['result']['comment'] %></td>
 		</tr>
 	</table>
 </div>
